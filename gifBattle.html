@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>GIF BATTLE</title>
+<link rel="stylesheet" href="gifBattleStyles.css">
+<script>
+        function changeHref(buttonId) {
+            var link1 = document.getElementById('meuLink1');
+	    var link2 = document.getElementById('meuLink2')	
+            if (buttonId === 'ataques1__botao1'){link1.src ='https://i.imgur.com/rW38RAH.gif'}
+	    else if (buttonId === 'ataques1__botao2'){link1.src='https://64.media.tumblr.com/e2e7cfd538cbb03e1c1d4067f275b83a/tumblr_np5a7tB2jw1t06ubmo2_540.gif'}
+	    else if (buttonId == 'ataques1__botao3'){link1.src='https://giffiles.alphacoders.com/129/12916.gif'}
+	    else if (buttonId=='ataques1__botao4'){link1.src='https://cdn.staticneo.com/mg/2019/07/tumblr_p6p2wncxf31wyh2j4o1_400RPgfn_display.gif'}
+	    else if (buttonId == 'ataques2__botao1'){link2.src='https://i.pinimg.com/originals/11/7a/d4/117ad4c36a8284c51a1b8fd7cb6cc772.gif'}
+	    else if (buttonId=='ataques2__botao2'){link2.src='https://www.mkgifs.com/wp-content/uploads/2023/05/Vegeta-Broly-GIF.gif'}
+	    else if (buttonId == 'ataques2__botao3'){link2.src='https://img.wattpad.com/d6557421e40c92145497f30614f3c9be9837a831/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f67505670646349532d7a66744b413d3d2d313334303639343039392e313736316436386663663631333064653132353735323133343933392e676966'}
+	    else if (buttonId=='ataques2__botao4'){link2.src='https://www.icegif.com/wp-content/uploads/2023/03/icegif-962.gif'}
+        }
+    </script>
+</head>
+
+<body>
+<header>
+
+<div class="logo">
+<div class="logo__texto">
+<h1>GIF BATTLE<h1>
+</div>
+</div>
+
+</header>
+
+<div class="meio">
+
+
+<div class="ataques1">
+<h3>LISTA DE ATAQUES<h3>
+	<div class="botoes">
+	<button onclick="changeHref('ataques1__botao1')" class="ataques1__botao1">MEDIO</button>
+	
+	<button onclick="changeHref('ataques1__botao2')" class="ataques1__botao2">COUNTER</button>
+	
+	<button onclick="changeHref('ataques1__botao3')" class="ataques1__botao3">LONGO</button>
+	
+	<button onclick="changeHref('ataques1__botao4')" class="ataques1__botao4">CARGA</button>
+	
+	</div>
+</div>
+
+<div class="ataque1">
+<img id='meuLink1' src="https://c.tenor.com/uAVPOQYxf7gAAAAC/tenor.gif" alt="Aguardando comando de ataque">
+</div>
+
+<div class="ataque2">
+
+<img id='meuLink2' src="https://c.tenor.com/7qfp4zDrZVgAAAAC/tenor.gif" alt="Aguardando comando de ataque">
+</div>
+
+<div class="ataques2">
+	<h3>LISTA DE ATAQUES<h3>
+<div class="botoes">
+	<button onclick="changeHref('ataques2__botao1')" class="ataques1__botao1">MEDIO</button>
+	
+	<button onclick="changeHref('ataques2__botao2')" class="ataques1__botao2">COUNTER</button>
+	
+	<button onclick="changeHref('ataques2__botao3')" class="ataques1__botao3">LONGO</button>
+	
+	<button onclick="changeHref('ataques2__botao4')" class="ataques1__botao4">CARGA</button>
+	
+	</div>
+</div>
+
+
+
+</meio>
+
+</body>
+
+</html>
